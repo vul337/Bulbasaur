@@ -1,0 +1,40 @@
+[package]
+name = "bulbasaur"
+version = "1.0.0"
+authors = ["Yiyi Wang <wangyiyi25@mails.tsinghua.edu.cn>"]
+edition = "2021"
+
+[features]
+unstable = []
+
+[dependencies]
+clap = "4.5.40"
+log = "0.4"
+pretty_env_logger = "0.4"
+rand = "0.8"
+libc = "0.2"
+wait-timeout = "0.2"
+byteorder = "1.2"
+chrono = "0.4"
+priority-queue = "1.0"
+num_cpus = "1.0"
+derive_more = "0.99"
+colored = "2.0"
+serde="1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+# lazy_static = "1.1"
+memmap = "0.7.0"
+twoway = "0.2.0"
+num = "0.4"
+nix = { version = "0.29.0", features = ["poll", "fs", "process", "signal"] }
+goblin = "0.9.3"
+walkdir = "2.5.0"
+signal-hook = "0.3"
+ndarray = "0.16.1"
+ndarray-rand = "0.15"
+libloading = "0.8"
+
+bulbasaur_common = {path = "../common" }
+
+[dev-dependencies]
